@@ -15,12 +15,11 @@ Just run it in the terminal.
 Check latest cudnn and cudatoolkit version for your GPU device.
 
 ```bash
- conda create -n deepfacelab -c main python=3.7 cudnn=7.6.5 cudatoolkit=10.1.243
- conda activate deepfacelab
+ mkvirtualenv deepfacelab -p $(which python3.7)
  git clone --depth 1 https://github.com/nagadit/DeepFaceLab_Linux.git
  cd DeepFaceLab_Linux
  git clone --depth 1 https://github.com/iperov/DeepFaceLab.git
- python -m pip install -r ./DeepFaceLab/requirements-cuda.txt
+ pip install colorama ffmpeg-python h5py numexpr "numpy<1.24" opencv-python pyqt5 scikit-image scipy "tensorflow[and-cuda]" tf2onnx tqdm
 ```
 
 ## 4. Download Pretrain (optional)

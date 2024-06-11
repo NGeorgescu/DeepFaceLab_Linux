@@ -1,12 +1,14 @@
 ## Using
-### 1. Install Anaconda 
-Anaconda is the preferred method of installing DeepFaceLab on Linux.
-[Just follow the tutorial](https://docs.conda.io/projects/conda/en/latest/user-guide/install).  
+### 1. Install Virtualenvwrapper or Anaconda
+
+For the rest of the tutorial, I will be using virtualenvwrapper.  
+
+If you want to use conda instead, you would simply replace the first line with `conda create --name deepfacelab python=3.7`
 
 ### 2. Install System Dependencies 
 You will need FFMpeg, Git, and the most recent NVIDIA driver for your system to use this project.
 
-If you are here, then you already have everything...
+If you are here, then you probably already have everything...
 
 ### 3. Install DeepFaceLab
 
